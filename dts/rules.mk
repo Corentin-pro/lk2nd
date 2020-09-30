@@ -11,6 +11,10 @@ DTBS += \
 	$(LOCAL_DIR)/msm8953-xiaomi-mido.dtb \
 	$(LOCAL_DIR)/sdm632-motorola-ocean.dtb
 endif
+ifeq ($(PROJECT), msm8953-fp3)
+DTBS += \
+	$(LOCAL_DIR)/sdm632-fairphone-fp3.dtb
+endif
 ifeq ($(PROJECT), msm8952-secondary)
 DTBS += \
 	$(LOCAL_DIR)/msm8940-xiaomi-santoni.dtb
